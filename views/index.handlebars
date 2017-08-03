@@ -1,0 +1,44 @@
+
+<h1>Veggie Burger Chow Time</h1>
+
+<h2></h2>
+
+<ul>
+  {{#each veggie}}
+    {{#unless this.devoured}}
+      <li>
+        {{this.name}}
+        <form action="/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="devoured" value="true">
+          <button type="submit" id="nom">Nom Nom Nom</button>
+        </form>       
+      </li>
+    {{/unless}}
+  {{/each}}
+</ul>
+
+
+<h2>Bye Bye Burgers!</h2>
+
+<ul>
+  {{#each veggie}}
+    {{#if this.devoured}}
+      <li>
+        {{this.name}}
+        <form action="/{{this.id}}?_method=PUT" method="POST">
+          
+        </form>       
+      </li>
+    {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Build Your Own Burger</h2>
+<form class="create-update-form" action="/" method="POST">
+  <div class="form-group">
+    <label for="ca">Burger Title:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <button type="submit" name="devoured" value="0">Build That Burger</button>
+</form>

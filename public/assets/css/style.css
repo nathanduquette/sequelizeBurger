@@ -1,0 +1,59 @@
+body {
+  align-items: center; 
+}
+
+h1 {
+  text-align: center;
+  font-size: 60px;
+}
+
+h2 {
+  float: left;
+}
+
+html { 
+  background:  url(https://media.tenor.com/images/e10152447cc548f4a7603a0f74072128/tenor.gif) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+#nom {
+  border-radius: 10px;
+  width: 195px;
+  padding: 0,0,0,5px;
+  background: #8B4513;
+  text-align: center;
+  color: #FFF700;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #D2691E;
+  opacity: 0.75;
+  border-radius: 25px;
+  width: 200px;
+  text-align: center;
+  float : left;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px, 5px, 5px, 20px;
+  background: #c5090e;
+  width: 200px;
+  float: left;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+/*https://mcsavage.files.wordpress.com/2009/09/thehoff.jpg  */
